@@ -17,8 +17,4 @@ public class Professor extends EachUspMember {
     public String getAreaPesquisa() {
         return areaPesquisa;
     }
-
-    public void setAreaPesquisa(String areaPesquisa) {
-        this.areaPesquisa = areaPesquisa;
-    }
 }

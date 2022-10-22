@@ -17,9 +17,4 @@ public class Aluno extends EachUspMember{
     public String getCursoGraduacao() {
         return this.cursoGraduacao;
     }
-
-    public void setCursoGraduacao(String cursoGraduacao) {
-        this.cursoGraduacao = cursoGraduacao;
-    }
-
 }
