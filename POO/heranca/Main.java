@@ -19,6 +19,11 @@ public class Main {
 
           Aluno aluno = new Aluno(nomeAluno, sobrenomeAluno, idadeAluno);
           System.out.println(aluno);
+
+          System.out.println("Em qual curso você deseja realizar matrícula?");
+          String cursoMatricula = scanner.next();
+
+          aluno.matricularAluno(cursoMatricula);
       }else if(tipoCadastro.toLowerCase().equals("professor")){
           System.out.println("Insira o seu nome:");
           String nomeProfessor = scanner.nextLine();
