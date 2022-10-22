@@ -11,7 +11,7 @@ public class Professor extends EachUspMember {
         }
 
         this.areaPesquisa = areaPesquisa;
-        System.out.println(this.getNome() + ", você registrou sua área de pesquisa com sucesso!");
+        System.out.println(this.getNome() + ", você registrou sua pesquisa na área de " + this.getAreaPesquisa() + " com sucesso!");
     }
 
     public String getAreaPesquisa() {
