@@ -5,10 +5,11 @@ public class Arqueiro extends Personagem implements Action{
    @Override
    public void atacarInimigo(Personagem inimigo){
        inimigo.setVida(inimigo.getVida() - (this.getAtaque() + this.getForcaArco()));
+       System.out.println("Vida do " + inimigo.getNome() + " após o ataque: " + inimigo.getVida());
    }
 
     public Arqueiro(int ataque, int velocidade){
-        super(100, ataque, velocidade);
+        super("arqueiro", 100, ataque, velocidade);
     }
 
     public void setForcaArco(int forcaArco) {
