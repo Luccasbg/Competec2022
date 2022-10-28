@@ -18,16 +18,13 @@ public class Main {
       arqueiro.setForcaArco(forcaArco);
       guerreiro.setForcaEspada(forcaEspada);
 
-      System.out.println(guerreiro.getVida());
-
-
       while(arqueiro.getVida() > 0 && guerreiro.getVida() > 0){
-          if(arqueiro.getVida() <= 0 || guerreiro.getVida() <= 0){
+          arqueiro.atacarInimigo(guerreiro);
+          if(guerreiro.getVida() <= 0){
               System.out.println("O personagem morreu!");
           }else{
-              arqueiro.atacarInimigo(guerreiro);
-              System.out.println(guerreiro.getVida());
+              System.out.println("Vida do guerreiro: " + guerreiro.getVida());
           }
       }
-  }
+    }
 }
